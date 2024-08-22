@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smaran - Register Deceased</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-box">
+            <h2>Register Deceased Person</h2>
+            <form enctype="multipart/form-data">
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" accept="image/*" required>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+
+                <label for="dod">Date of Death:</label>
+                <input type="date" id="dod" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+
+                <label for="funeral-date">Funeral Date:</label>
+                <input type="date" id="funeral-date" required>
+
+                <label for="funeral-place">Funeral Place:</label>
+                <input type="text" id="funeral-place" required>
+
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        
+        <!-- Display the registered person's details after submission -->
+        <div id="display-info" class="form-box" style="display:none;">
+            <img id="display-pic" src="#" alt="Profile Picture">
+            <h3 id="display-name">Name</h3>
+            <p id="display-age">Age: </p>
+            <p id="display-funeral">Funeral Details: </p>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
